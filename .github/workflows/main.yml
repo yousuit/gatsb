@@ -36,5 +36,5 @@ jobs:
      with:  
        azcliversion: 2.0.72  
        inlineScript: |  
-         az storage blob delete-batch -s "\$web2" --connection-string "${{ secrets.CONNECTION_STRING }}"  
-         az storage blob upload-batch -d "\$web2" -s public --connection-string "${{ secrets.CONNECTION_STRING }}"  
+         az storage blob delete-batch -s "\$web1" --connection-string "${{ secrets.CONNECTION_STRING }}"  
+         az storage blob upload-batch -d "\$web1" -s public --connection-string "${{ secrets.CONNECTION_STRING }}"  
